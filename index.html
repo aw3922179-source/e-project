@@ -1,11 +1,453 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheatreWorld - Experience the Magic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    
+  <!-- Navbar -->
+         <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">🎭</span>
+        <span class="logo-text">TheatreWorld</span>
+      </div>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link">Shows <i class="arrow">▾</i></a>
+          <div class="dropdown-menu">
+            <a href="urdu.html">Urdu Theatre</a>
+            <a href="hindi.html">Hindi Theatre</a>
+            <a href="english.html">English Theatre</a>
+          </div>
+        </li>
+        <li><a href="auditorium.html" class="nav-link">Venues</a></li>
+        <li><a href="theaterspeak.html" class="nav-link">Reviews</a></li>
+        <li><a href="artist-gallery.html" class="nav-link">Artists</a></li>
+        <li><a href="upcoming-events.html" class="nav-link">Events</a></li>
+        <li><a href="award.html" class="nav-link">Awards</a></li>
+        <li><a href="feedback.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to Theatre World</h1>
+      <p class="hero-subtitle">Experience the magic of live performances across languages and cultures</p>
+      <div class="hero-buttons">
+        <a href="#featured-shows" class="btn btn-primary">Explore Shows</a>
+        <a href="upcoming-events.html" class="btn btn-secondary">Upcoming Events</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Featured Shows Slider -->
+  <section id="featured-shows" class="featured-shows">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Shows</h2>
+        <p>Discover our most popular and critically acclaimed performances</p>
+      </div>
+
+      <div class="shows-slider">
+        <div class="slider-wrapper">
+          <div class="slide active">
+            <div class="show-card">
+              <div class="card-image">
+                <img
+                  src="http://mediamagick.com/wp-content/uploads/2018/06/WhatsApp-Image-2018-06-29-at-10.23.55-PM.jpg"
+                  alt="Parwaaz hai junoon">
+                <div class="card-overlay">
+                  <span class="category">Urdu Drama</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Parwaaz hai junoon</h3>
+                <p>The lives and hardships of soldiers in the Pakistan air force, showcasing courage and determination.
+                </p>
+                <div class="card-footer">
+                  <span class="rating">★★★★☆</span>
+                  <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="show-card">
+              <div class="card-image">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.cOM63WZk8_5afDg227mLSgHaFE?pid=Api&h=220&P=0"
+                  alt="Love Guru">
+                <div class="card-overlay">
+                  <span class="category">Comedy</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Love Guru</h3>
+                <p>Laughter, love, and a whole lot of emotions in this romantic comedy that will leave you smiling.</p>
+                <div class="card-footer">
+                  <span class="rating">★★★★★</span>
+                  <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="show-card">
+              <div class="card-image">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.HNB0q84uFJ2KUqFprti0HQHaE9?pid=Api&h=220&P=0"
+                  alt="Wrong No">
+                <div class="card-overlay">
+                  <span class="category">Comedy Drama</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Wrong No</h3>
+                <p>A middle-class guy's journey to prove his worth, filled with unexpected twists and heartwarming
+                  moments.</p>
+                <div class="card-footer">
+                  <span class="rating">★★★★☆</span>
+                  <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="show-card">
+              <div class="card-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.5nUSnZP4dPDpLhyUN4e1BQHaEK?pid=Api&h=220&P=0"
+                  alt="Hera Pheri">
+                <div class="card-overlay">
+                  <span class="category">Hindi Comedy</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Hera Pheri</h3>
+                <p>The hilarious misadventures of three friends caught in a web of comedy and chaos.</p>
+                <div class="card-footer">
+                  <span class="rating">★★★★★</span>
+                  <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="show-card">
+              <div class="card-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.vy1NHgs673r7LexkBQCKjwHaE8?pid=Api&h=220&P=0"
+                  alt="Taare Zameen Par">
+                <div class="card-overlay">
+                  <span class="category">Drama</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Taare Zameen Par</h3>
+                <p>A touching story of a dyslexic child and the teacher who helps him discover his true potential.</p>
+                <div class="card-footer">
+                  <span class="rating">★★★★★</span>
+                  <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="show-card">
+              <div class="card-image">
+                <img src="https://i.ytimg.com/vi/3MPzZH6vUv8/maxresdefault.jpg" alt="Hichki">
+                <div class="card-overlay">
+                  <span class="category">Inspirational</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Hichki</h3>
+                <p>About turning disadvantages into opportunities and overcoming life's biggest challenges.</p>
+                <div class="card-footer">
+                  <span class="rating">★★★★☆</span>
+                  <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn prev-btn">❮</button>
+        <button class="slider-btn next-btn">❯</button>
+
+        <div class="slider-indicators">
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Auditoriums Section
+  <section id="auditoriums" class="auditoriums">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Venues</h2>
+        <p>Premium auditoriums with world-class facilities</p>
+      </div>
+      <div class="venues-grid">
+        <div class="venue-card">
+          <h3>Prithvi Theatre</h3>
+          <p>Mumbai</p>
+          <span class="venue-capacity">Capacity: 200</span>
+        </div>
+        <div class="venue-card">
+          <h3>Siri Fort Auditorium</h3>
+          <p>Delhi</p>
+          <span class="venue-capacity">Capacity: 850</span>
+        </div>
+        <div class="venue-card">
+          <h3>Ravindra Natya Mandir</h3>
+          <p>Mumbai</p>
+          <span class="venue-capacity">Capacity: 1200</span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Theatre Reviews -->
+  <!-- <section id="theatre-speak" class="reviews">
+    <div class="container">
+      <div class="section-header">
+        <h2>Theatre Speak</h2>
+        <p>What critics and audiences are saying</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-content">
+            <p>"A stunning performance with exceptional direction that captivates from start to finish!"</p>
+          </div>
+          <div class="review-author">
+            <span class="author-name">Times Review</span>
+            <span class="review-rating">★★★★★</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-content">
+            <p>"The actors truly brought the story to life with their powerful performances!"</p>
+          </div>
+          <div class="review-author">
+            <span class="author-name">Local Voice</span>
+            <span class="review-rating">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Artist Gallery -->
+  <!-- <section id="artist-gallery" class="artist-gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Artists</h2>
+        <p>Meet the talented performers who bring stories to life</p>
+      </div>
+      <div class="artists-grid">
+        <div class="artist-card">
+          <img src="https://via.placeholder.com/200x200/8b0000/ffffff?text=Artist+1" alt="Artist 1">
+          <h3>Artist Name</h3>
+          <p>Lead Actor</p>
+        </div>
+        <div class="artist-card">
+          <img src="https://via.placeholder.com/200x200/8b0000/ffffff?text=Artist+2" alt="Artist 2">
+          <h3>Artist Name</h3>
+          <p>Director</p>
+        </div>
+        <div class="artist-card">
+          <img src="https://via.placeholder.com/200x200/8b0000/ffffff?text=Artist+3" alt="Artist 3">
+          <h3>Artist Name</h3>
+          <p>Supporting Actor</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Upcoming Events -->
+  <!-- <section id="upcoming-events" class="upcoming-events">
+    <div class="container">
+      <div class="section-header">
+        <h2>Upcoming Events</h2>
+        <p>Don't miss these exciting upcoming performances</p>
+      </div>
+      <div class="events-timeline">
+        <div class="event-item">
+          <div class="event-date">
+            <span class="day">15</span>
+            <span class="month">Oct</span>
+          </div>
+          <div class="event-details">
+            <h3>Drama "Natyashastra"</h3>
+            <p>Classical Indian drama performance</p>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-date">
+            <span class="day">10</span>
+            <span class="month">Nov</span>
+          </div>
+          <div class="event-details">
+            <h3>Play "Rangmanch"</h3>
+            <p>Contemporary theatrical experience</p>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-date">
+            <span class="day">05</span>
+            <span class="month">Dec</span>
+          </div>
+          <div class="event-details">
+            <h3>Musical "Kal Aaj Aur Kal"</h3>
+            <p>Time-spanning musical journey</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Venue Details -->
+  <!-- <section id="venue-details" class="venue-details">
+    <div class="container">
+      <div class="section-header">
+        <h2>Venue Information</h2>
+        <p>Everything you need to know about our locations</p>
+      </div>
+      <div class="venue-info">
+        <p>All shows will be held at our partner auditoriums across major cities. Complete address details, parking
+          information, and directions will be provided with your ticket confirmation.</p>
+        <div class="venue-features">
+          <div class="feature">
+            <span class="feature-icon">🎭</span>
+            <span>Premium Sound System</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🪑</span>
+            <span>Comfortable Seating</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🚗</span>
+            <span>Parking Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Awards Section -->
+  <!-- <section id="awards" class="awards">
+    <div class="container">
+      <div class="section-header">
+        <h2>Awards & Recognition</h2>
+        <p>Celebrating excellence in theatre</p>
+      </div>
+      <div class="awards-grid">
+        <div class="award-item">
+          <div class="award-icon">🏆</div>
+          <h3>Best Play 2023</h3>
+          <p>Hindi Rangmanch</p>
+        </div>
+        <div class="award-item">
+          <div class="award-icon">⭐</div>
+          <h3>Lifetime Achievement</h3>
+          <p>Naseeruddin Shah</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Magazines -->
+  <!-- <section id="magazines" class="magazines">
+    <div class="container">
+      <div class="section-header">
+        <h2>Theatre Magazines</h2>
+        <p>Stay updated with the world of theatre</p>
+      </div>
+      <div class="magazine-content">
+        <p>Explore our curated collection of digital theatre magazines, published monthly. Get insights into the latest
+          productions, artist interviews, and industry trends.</p>
+        <a href="#" class="btn btn-primary">Subscribe Now</a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact Section -->
+  <!-- <section id="feedback" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-form">
+          <form class="form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Footer  -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">🎭</span>
+          <span class="logo-text">TheatreWorld</span>
+        </div>
+        <p>&copy; 2025 Theatre World. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>  
+
+  <script src="script.js"></script>
 </body>
+
 </html>
